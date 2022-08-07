@@ -1,0 +1,51 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/variables";
+.header {
+  padding: 12rem 0 12rem 0;
+  background-position: center;
+  background-size: cover;
+  @include respond(tab-land) {
+    padding: 10rem 0 10rem 0;
+  }
+  @include respond(tab-port) {
+    padding: 9rem 0 9rem 0;
+  }
+  @include respond(phone) {
+    padding: 9rem 0 9rem 0;
+  }
+  &__1 {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-tertiary, 0.9),
+        rgba($color-tertiary, 0.9)
+      ),
+      url("../../img/youtube.png");
+  }
+}
+.section__about {
+  background-image: linear-gradient(
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url("../../img/youtube.png");
+
+  @include respond(tab-land) {
+    background-size: 30rem;
+    padding: 2rem 0;
+    background-position: center;
+  }
+  @include respond(tab-port) {
+    padding: 0;
+    background-position: center;
+  }
+  @include respond(phone) {
+    background-size: 20rem;
+    padding: 0;
+    background-position: center;
+  }
+  @include respond(small-phone) {
+    background-size: 15rem;
+    padding: 0;
+    background-position: center;
+  }
+}

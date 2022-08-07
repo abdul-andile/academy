@@ -1,0 +1,553 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  &__btn {
+  }
+  &__side {
+    height: 35rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__front {
+      background-color: $color-tertiary;
+    }
+    &__back {
+      transform: rotateY(180deg);
+      &_1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_4 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_5 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_6 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_7 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+      &_8 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary,
+          $color-primary
+        );
+      }
+    }
+  }
+  &:hover &__side__front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side__back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLLING
+  &__picture {
+    background-size: cover;
+    height: 17rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &__1 {
+      background-image: url(../../img/northinoTV2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &__2 {
+      background-image: url(../../img/northinoStore.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &__3 {
+      background-image: url(../../img/team.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &__4 {
+      background-image: url(../../img/northinoTV.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &__5 {
+      background-image: url(../../img/almuhandis2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    &__6 {
+      background-image: url(../../img/kalsom.jpg);
+      background-size: cover;
+      // background-position: center;
+    }
+
+    &__7 {
+      background-image: url(../../img/sanee.jpg);
+      background-size: cover;
+      // background-position: center;
+    }
+    &__8 {
+      background-image: url(../../img/motive.jpg);
+      background-size: cover;
+      background-position: center;
+      transform: translateY(-1.4rem) scale(1.2);
+    }
+    &__9 {
+      background-image: url(../../img/codes.jpg);
+      background-size: cover;
+      background-position: center;
+      transform: translateY(-1.4rem) scale(1.2);
+    }
+    &__10 {
+      background-image: url(../../img/business.png);
+      background-size: cover;
+      background-position: center;
+      transform: translateY(-1.4rem) scale(1.2);
+    }
+    &__11 {
+      background-image: url(../../img/mentor.jpg);
+      background-size: cover;
+      background-position: center;
+      transform: translateY(-1.4rem) scale(1.2);
+    }
+  }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-tertiary;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+  &__heading_span {
+    padding: 0.5rem 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &__1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba($color-secondary, 0.85)
+      );
+      color: $color-primary;
+    }
+    &__2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+      color: $color-white;
+    }
+    &__3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba($color-secondary, 0.85)
+      );
+      color: $color-primary;
+    }
+    &__4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba($color-secondary, 0.85)
+      );
+      color: $color-primary;
+    }
+    &__5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+      color: $color-white;
+    }
+    &__6 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba($color-secondary, 0.85)
+      );
+      color: $color-primary;
+    }
+    &__7 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+      color: $color-white;
+    }
+    &__8 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba($color-secondary, 0.85)
+      );
+      color: $color-primary;
+    }
+  }
+  &__details {
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: $color-white;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // BACK SIDE STYLLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &__price_box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 3rem;
+  }
+  &__price_only {
+    font-size: 1.5rem;
+  }
+  &__price_value {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  /// PHONE SIZE CARD
+
+  @include respond(tab-land) {
+    // FUNCTIONALITY
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-primary;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__heading {
+      top: 13rem;
+      right: 2rem;
+      font-size: 1.6rem;
+    }
+    &__btn {
+      font-size: 1rem !important;
+      margin-left: -1rem;
+      margin-top: -1rem;
+    }
+    &__picture {
+      height: 17rem;
+    }
+    &__side {
+      height: 36rem;
+      position: relative;
+      box-shadow: none;
+
+      &__back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -8rem;
+        z-index: -1;
+        padding-top: 5rem;
+        &_1 {
+          height: 27.5rem;
+        }
+        &_2 {
+          height: 27.5rem;
+        }
+        &_3 {
+          height: 27.5rem;
+        }
+      }
+    }
+    &:hover &__side__front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 2rem;
+    }
+    // BACK SIDE STYLLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__price_box {
+      text-align: center;
+
+      margin-left: -1rem;
+
+      padding: 1rem 2rem;
+    }
+    &__price_value {
+      font-size: 1rem;
+    }
+    &__price_only {
+      font-size: 1.1rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    // FUNCTIONALITY
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-primary;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    &__heading {
+      top: 17rem;
+      right: 2rem;
+    }
+    &__picture {
+      height: 20rem;
+    }
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &__back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -5rem;
+        z-index: -1;
+        padding-top: 5rem;
+      }
+    }
+    &:hover &__side__front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1.5rem 2rem;
+    }
+    // BACK SIDE STYLLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__price_box {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    &__price_value {
+      font-size: 1.6rem;
+    }
+    &__price_only {
+      font-size: 1.2rem;
+    }
+  }
+  @include respond(tab-port) {
+    // FUNCTIONALITY
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-primary;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    &__heading {
+      top: 30rem;
+      right: 2rem;
+    }
+    &__picture {
+      height: 37rem;
+    }
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &__back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -5rem;
+        z-index: -1;
+        padding-top: 5rem;
+      }
+    }
+    &:hover &__side__front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1.5rem 2rem;
+    }
+    // BACK SIDE STYLLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__price_box {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    &__price_value {
+      font-size: 1.6rem;
+    }
+    &__price_only {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include respond(phone) {
+    // FUNCTIONALITY
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-primary;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    &__picture {
+      height: 17rem;
+    }
+    &__heading {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-tertiary;
+      position: absolute;
+      top: 13.5rem;
+      left: 0.7rem;
+      width: 100%;
+    }
+    &__heading_span {
+      padding: 0.5rem 1.5rem;
+    }
+    &__btn {
+      padding: 1rem 1rem !important;
+      font-size: 0.9rem !important;
+      margin-left: -1rem;
+    }
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &__back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -5rem;
+        z-index: -1;
+        padding-top: 1rem;
+      }
+    }
+    &:hover &__side__front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 0.5rem 2rem;
+    }
+    // BACK SIDE STYLLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 5rem 0 1rem 1rem;
+      margin: 0 auto;
+      text-align: center;
+      background-color: $color-primary;
+    }
+    &__price_box {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    &__price_value {
+      display: none;
+    }
+    &__price_only {
+      font-size: 1.2rem;
+    }
+  }
+}

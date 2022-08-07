@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model tutorials {
+  id                Int     @id @default(autoincrement())
+  video_url         String? @db.VarChar(255)
+  video_title       String? @db.VarChar(45)
+  video_description String? @db.VarChar(255)
+}
+
+model admin {
+  id       Int     @id @default(autoincrement())
+  username String? @db.VarChar(45)
+  password String? @db.VarChar(255)
+}
